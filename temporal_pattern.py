@@ -212,12 +212,7 @@ with col[1]:
     #Heatmap
     st.markdown("<h4 class='centered animated-title'>Crime Heatmap by State Area</h4>", unsafe_allow_html=True)
     heatmap = make_heatmap(crime_counts, 'AREA NAME', 'crime_count', selected_color_theme, "Area", "Crime Count")
-    st.altair_chart(heatmap, use_container_width=True)
-
-    st.write('NOTE: Not sure if the numbers are correct. Rough Math: Data set has ab 1 M enties for 5 years.'
-            ' There are 21 areas. So if we divide 1M by 5 we get 200k. Lets take the acrime count for each area to be 10k,'
-            ' which would be a little higher than average I think. Then 10k * 21 = 210k, so it is prob right')
-    
+    st.altair_chart(heatmap, use_container_width=True)    
 
     # Crime patterns by hour
     st.markdown("<h4 class='centered animated-title'>Crime Patterns by Hour of the Day</h4>", unsafe_allow_html=True)

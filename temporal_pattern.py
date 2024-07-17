@@ -120,10 +120,6 @@ with st.sidebar:
         date2 = st.date_input("End Date", df["DATE OCC"].max())
         df_filtered = df[(df["DATE OCC"] >= pd.to_datetime(date1)) & (df["DATE OCC"] <= pd.to_datetime(date2))]
 
-    st.markdown("<h3 class='centered animated-title'>State</h3>", unsafe_allow_html=True)
-    states = ["California", "Other State"]
-    state = st.selectbox("Select a state", states)
-
     st.markdown("<h3 class='centered animated-title'>Theme</h3>", unsafe_allow_html=True)
     color_theme_list = ['blues', 'cividis', 'greens', 'inferno', 'magma', 'plasma', 'reds', 'rainbow', 'turbo', 'viridis']
     selected_color_theme = st.selectbox('Select a color theme', color_theme_list)

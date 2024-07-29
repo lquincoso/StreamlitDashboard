@@ -1,4 +1,4 @@
-# Capstone 1 - Group 8 Summer 2024
+# Capstone 1 - Team 8 Summer 2024
 
 ## Project Title: L.A. Crime Streamlit Dashboard
 

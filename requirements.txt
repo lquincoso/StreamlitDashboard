@@ -1,0 +1,13 @@
+streamlit
+pandas
+joblib
+scikit-learn
+imblearn
+StringIO
+requests
+altair
+dask.dataframe
+plotly.express
+
+
+
